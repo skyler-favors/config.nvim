@@ -32,14 +32,15 @@ require "custom.telescope"
 require "custom.treesitter"
 require "custom.lsp"
 require "custom.cmp"
+require "custom.settings"
+require "custom.autocmds"
+require "custom.mappings"
+require "custom.copilot"
 require("bufferline").setup {
   options = {
     mode = "tabs"
   }
 }
-require "custom.settings"
-require "custom.autocmds"
-require "custom.mappings"
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
