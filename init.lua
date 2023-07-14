@@ -34,6 +34,7 @@ require "custom.lsp"
 require "custom.cmp"
 require "custom.settings"
 require "custom.autocmds"
+require "custom.which-key"
 require "custom.mappings"
 require "custom.copilot"
 require("bufferline").setup {
