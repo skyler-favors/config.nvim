@@ -10,6 +10,23 @@ return {
     "MunifTanjim/nui.nvim",
   },
   config = function ()
-    require('neo-tree').setup {}
+    require('neo-tree').setup {
+      filesystem = {
+        window = {
+          mappings = {
+            ["<cr>"] = "open_tab_drop"
+          }
+        }
+      },
+        -- event_handlers = {
+        --   {
+        --     event = "file_opened",
+        --     handler = function(file_path)
+        --       --vim.cmd ':Neotree close'
+        --       require("neo-tree").close_all()
+        --     end
+        --   },
+        -- }
+    }
   end,
 }
