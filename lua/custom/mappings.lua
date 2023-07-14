@@ -40,6 +40,8 @@ vim.keymap.set('n', '<leader>sw', builtin.grep_string, { desc = '[S]earch curren
 vim.keymap.set('n', '<leader>sg', builtin.live_grep, { desc = '[S]earch by [G]rep' })
 vim.keymap.set('n', '<leader>sd', builtin.diagnostics, { desc = '[S]earch [D]iagnostics' })
 
+vim.keymap.set('n', '<leader>fm', '<cmd>Format<cr>', { desc = 'LSP Format current buffer', silent = true })
+
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })

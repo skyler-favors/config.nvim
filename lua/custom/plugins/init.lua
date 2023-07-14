@@ -131,7 +131,7 @@ return {
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
 
-  { "github/copilot.vim" },
+  --{ "github/copilot.vim" },
 
   require 'kickstart.plugins.autoformat',
 }
