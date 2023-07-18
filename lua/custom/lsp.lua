@@ -48,19 +48,20 @@ end
 --
 --  Add any additional override configuration in the following tables. They will be passed to
 --  the `settings` field of the server config. You must look up that documentation yourself.
-local servers = {
-	-- clangd = {},
-	-- gopls = {},
-	-- pyright = {},
-	-- rust_analyzer = {},
-	tsserver = {},
-	lua_ls = {
-		Lua = {
-			workspace = { checkThirdParty = false },
-			telemetry = { enable = false },
-		},
-	},
-}
+-- local servers = {
+-- 	-- pyright = {},
+-- 	rust_analyzer = {},
+-- 	jsonls = {},
+-- 	tsserver = {},
+-- 	lua_ls = {
+-- 		Lua = {
+-- 			workspace = { checkThirdParty = false },
+-- 			telemetry = { enable = false },
+-- 		},
+-- 	},
+-- }
+
+local servers = require "custom.installed_langs".servers
 
 -- Setup neovim lua configuration
 require('neodev').setup()

@@ -1,12 +1,13 @@
 local wk = require("which-key")
+
 wk.register({
 	["<leader>c"] = {
-		name = "+hello"
+		name = "𝑐"
 	}
 }, {})
 
 wk.register({
 	["<leader>d"] = {
-		name = "+world"
+		name = "Đ"
 	}
 }, {})

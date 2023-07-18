@@ -7,7 +7,10 @@ require('telescope').setup {
 			i = {
 				['<C-u>'] = false,
 				['<C-d>'] = false,
-				['<CR>'] = actions.select_tab
+				-- opens file in new tab
+				['<CR>'] = actions.select_tab,
+				-- replaces current window
+				--['<C-i>'] = actions.select_default
 			},
 		},
 	},
@@ -15,3 +18,5 @@ require('telescope').setup {
 
 -- Enable telescope fzf native, if installed
 pcall(require('telescope').load_extension, 'fzf')
+
+require('telescope').load_extension('luasnip')

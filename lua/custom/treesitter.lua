@@ -1,9 +1,10 @@
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
+local ensure_installed = require "custom.installed_langs".treesitter
 require 'nvim-treesitter.install'.compilers = { "clang" }
 require('nvim-treesitter.configs').setup {
 	-- Add languages to be installed here that you want installed for treesitter
-	ensure_installed = { 'lua', 'rust', 'javascript', 'tsx', 'typescript', 'vimdoc', 'vim', 'html', 'css' },
+	ensure_installed = ensure_installed,
 
 	-- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
 	auto_install = false,

@@ -9,7 +9,7 @@ return {
     "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
     "MunifTanjim/nui.nvim",
   },
-  config = function ()
+  config = function()
     require('neo-tree').setup {
       filesystem = {
         window = {
@@ -18,15 +18,15 @@ return {
           }
         }
       },
-        -- event_handlers = {
-        --   {
-        --     event = "file_opened",
-        --     handler = function(file_path)
-        --       --vim.cmd ':Neotree close'
-        --       require("neo-tree").close_all()
-        --     end
-        --   },
-        -- }
+      -- event_handlers = {
+      --   {
+      --     event = "file_opened",
+      --     handler = function(file_path)
+      --       --vim.cmd ':Neotree close'
+      --       require("neo-tree").close_all()
+      --     end
+      --   },
+      -- }
     }
   end,
 }

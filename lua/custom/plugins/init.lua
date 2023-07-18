@@ -127,11 +127,33 @@ return {
   },
 
   { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
-  -- NOTE: Next Step on Your Neovim Journey: Add/Configure additional "plugins" for kickstart
-  --       These are some example plugins that I've included in the kickstart repository.
-  --       Uncomment any of the lines below to enable them.
+  { "github/copilot.vim" },
 
-  --{ "github/copilot.vim" },
+  -- run this if preview doesn't work
+  -- ~/.local/share/nvim/lazy/markdown-preview.nvim/app/install.sh
+  {
+    'iamcco/markdown-preview.nvim',
+    ft = 'markdown',
+    run = 'cd app && yarn install',
+  },
+
+  -- adds a icon picker for nerd fonts
+  -- {
+  --   "ziontee113/icon-picker.nvim",
+  --   dependencies = {
+  --     'stevearc/dressing.nvim'
+  --   },
+  --   config = function()
+  --     require("icon-picker").setup({
+  --       disable_legacy_commands = true
+  --     })
+  --   end
+  -- },
+
+  {
+    "benfowler/telescope-luasnip.nvim",
+    module = "telescope._extensions.luasnip",
+  },
 
   require 'kickstart.plugins.autoformat',
 }
