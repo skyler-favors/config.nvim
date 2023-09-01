@@ -1,5 +1,6 @@
 local wk = require("which-key")
 
+
 wk.register({
 	["<leader>c"] = {
 		name = "𝑐"

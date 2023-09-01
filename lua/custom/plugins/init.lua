@@ -154,6 +154,9 @@ return {
     "benfowler/telescope-luasnip.nvim",
     module = "telescope._extensions.luasnip",
   },
+  {
+    "Eandrju/cellular-automaton.nvim"
+  },
 
   require 'kickstart.plugins.autoformat',
 }
