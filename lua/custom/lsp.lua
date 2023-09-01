@@ -86,3 +86,7 @@ mason_lspconfig.setup_handlers {
 		}
 	end,
 }
+
+require 'lspconfig'.omnisharp.setup {
+	filetypes = { "cs", "razor", "cshtml" }
+}

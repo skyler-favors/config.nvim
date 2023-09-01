@@ -36,7 +36,9 @@ require "custom.settings"
 require "custom.autocmds"
 require "custom.which-key"
 require "custom.mappings"
-require "custom.copilot"
+--require "custom.jupyter"
+
+--require "custom.copilot"
 require("bufferline").setup {
   options = {
     mode = "tabs"

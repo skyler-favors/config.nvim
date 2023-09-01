@@ -12,9 +12,12 @@ local servers = {
 		},
 	},
 	tailwindcss = {},
+	pyright = {},
+	omnisharp = {}
 }
 
-local treesitter = { 'lua', 'rust', 'javascript', 'tsx', 'typescript', 'vimdoc', 'vim', 'html', 'css', 'json' }
+local treesitter = { 'lua', 'rust', 'javascript', 'tsx', 'typescript', 'vimdoc', 'vim', 'html', 'css', 'json', 'python',
+	'c_sharp', 'sql' }
 
 return {
 	servers = servers,
