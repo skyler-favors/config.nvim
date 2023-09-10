@@ -160,6 +160,8 @@ return {
 
   { "chrisbra/csv.vim" },
 
+  { "github/copilot.vim" },
+
   -- { 'hkupty/iron.nvim' },
   -- { 'kana/vim-textobj-user' },
   -- { 'kana/vim-textobj-line' },
