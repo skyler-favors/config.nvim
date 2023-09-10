@@ -127,7 +127,7 @@ return {
   },
 
   { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
-  { "github/copilot.vim" },
+  --{ "github/copilot.vim" },
 
   -- run this if preview doesn't work
   -- ~/.local/share/nvim/lazy/markdown-preview.nvim/app/install.sh
@@ -157,6 +157,14 @@ return {
   {
     "Eandrju/cellular-automaton.nvim"
   },
+
+  { "chrisbra/csv.vim" },
+
+  -- { 'hkupty/iron.nvim' },
+  -- { 'kana/vim-textobj-user' },
+  -- { 'kana/vim-textobj-line' },
+  -- { 'GCBallesteros/vim-textobj-hydrogen' },
+  -- { 'GCBallesteros/jupytext.vim' },
 
   require 'kickstart.plugins.autoformat',
 }
