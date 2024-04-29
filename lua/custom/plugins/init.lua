@@ -127,7 +127,8 @@ return {
   },
 
   { 'akinsho/bufferline.nvim', version = "*", dependencies = 'nvim-tree/nvim-web-devicons' },
-  --{ "github/copilot.vim" },
+
+  { "github/copilot.vim" },
 
   -- run this if preview doesn't work
   -- ~/.local/share/nvim/lazy/markdown-preview.nvim/app/install.sh
@@ -160,13 +161,22 @@ return {
 
   { "chrisbra/csv.vim" },
 
-  { "github/copilot.vim" },
-
   -- { 'hkupty/iron.nvim' },
   -- { 'kana/vim-textobj-user' },
   -- { 'kana/vim-textobj-line' },
   -- { 'GCBallesteros/vim-textobj-hydrogen' },
   -- { 'GCBallesteros/jupytext.vim' },
+  { "alec-gibson/nvim-tetris" },
+
+  {
+    'jim-fx/sudoku.nvim',
+    cmd = "Sudoku",
+    config = function()
+      require("sudoku").setup({
+        -- configuration ...
+      })
+    end
+  },
 
   require 'kickstart.plugins.autoformat',
 }

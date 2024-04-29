@@ -90,3 +90,7 @@ mason_lspconfig.setup_handlers {
 require 'lspconfig'.omnisharp.setup {
 	filetypes = { "cs", "razor", "cshtml" }
 }
+
+-- require 'lspconfig'.htmx.setup {
+-- 	filetypes = { "html", "htmldjango" }
+-- }

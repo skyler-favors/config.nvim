@@ -29,6 +29,7 @@ wk.register({
 
 wk.register({
 	["<leader>r"] = {
-		t = { "<cmd>set tabstop=2 shiftwidth=2 expandtab | retab<cr>", "Set Tabs" }
+		t = { "<cmd>set tabstop=2 shiftwidth=2 expandtab | retab<cr>", "Set Tabs 2" },
+		r = { "<cmd>set tabstop=4 shiftwidth=4 expandtab | retab<cr>", "Set Tabs 4" }
 	}
 }, {})

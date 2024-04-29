@@ -13,10 +13,17 @@ local servers = {
 	},
 	tailwindcss = {},
 	pyright = {},
+	html = {
+		filetypes = { "html", "htmldjango" }
+	},
 }
 
 local treesitter = { 'lua', 'rust', 'javascript', 'tsx', 'typescript', 'vimdoc', 'vim', 'html', 'css', 'json', 'python',
 	'c_sharp', 'sql' }
+
+require 'lspconfig'.html.setup {
+	filetypes = { "html", "htmldjango" }
+}
 
 return {
 	servers = servers,
