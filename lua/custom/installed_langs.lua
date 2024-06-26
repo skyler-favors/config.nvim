@@ -2,7 +2,7 @@
 -- setups lsp server and treesitter
 
 local servers = {
-	rust_analyzer = {},
+	--rust_analyzer = {},
 	jsonls = {},
 	tsserver = {},
 	lua_ls = {
@@ -11,15 +11,14 @@ local servers = {
 			telemetry = { enable = false },
 		},
 	},
-	tailwindcss = {},
+	--tailwindcss = {},
 	pyright = {},
 	html = {
 		filetypes = { "html", "htmldjango" }
 	},
 }
 
-local treesitter = { 'lua', 'rust', 'javascript', 'tsx', 'typescript', 'vimdoc', 'vim', 'html', 'css', 'json', 'python',
-	'c_sharp', 'sql' }
+local treesitter = { 'lua', 'javascript', 'tsx', 'typescript', 'vimdoc', 'vim', 'html', 'css', 'json', 'python' }
 
 require 'lspconfig'.html.setup {
 	filetypes = { "html", "htmldjango" }

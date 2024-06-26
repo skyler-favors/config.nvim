@@ -1,7 +1,7 @@
 -- [[ Configure Treesitter ]]
 -- See `:help nvim-treesitter`
 local ensure_installed = require "custom.installed_langs".treesitter
-require 'nvim-treesitter.install'.compilers = { "clang" }
+-- require 'nvim-treesitter.install'.compilers = { "clang" }
 require('nvim-treesitter.configs').setup {
 	-- Add languages to be installed here that you want installed for treesitter
 	ensure_installed = ensure_installed,
